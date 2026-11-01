@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "interplanetary:enceladus_ice"
+    }
+  },
+  "result": {
+    "id": "interplanetary:enceladus_ice_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:vesta_stone"
+  },
+  "result": {
+    "id": "interplanetary:vesta_stone_bricks",
+    "count": 1
+  }
+}

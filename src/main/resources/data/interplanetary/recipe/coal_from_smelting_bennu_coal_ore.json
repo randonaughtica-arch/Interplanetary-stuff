@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "interplanetary:bennu_coal_ore"
+  },
+  "result": {
+    "id": "minecraft:coal"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

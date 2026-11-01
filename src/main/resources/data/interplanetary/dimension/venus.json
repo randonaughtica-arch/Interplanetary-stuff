@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:venus",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:venus",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:venus"
+    }
+  }
+}

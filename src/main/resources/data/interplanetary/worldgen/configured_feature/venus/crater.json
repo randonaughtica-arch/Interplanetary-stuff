@@ -1,0 +1,12 @@
+{
+  "type": "interplanetary:crater",
+  "config": {
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 4,
+      "max_inclusive": 9
+    },
+    "depth": 0.35,
+    "rim": 0.2
+  }
+}

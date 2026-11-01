@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "key": {
+    "C": {
+      "item": "interplanetary:frost_crystal"
+    }
+  },
+  "result": {
+    "id": "interplanetary:frost_crystal_block",
+    "count": 1
+  }
+}

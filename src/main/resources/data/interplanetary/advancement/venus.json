@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:venus_soil"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.venus.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.venus.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_venus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:venus"
+      }
+    }
+  },
+  "parent": "interplanetary:moon"
+}

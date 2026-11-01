@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " R ",
+    "RER",
+    "MCM"
+  ],
+  "key": {
+    "R": {
+      "item": "interplanetary:iridium_plating"
+    },
+    "E": {
+      "item": "interplanetary:advanced_rocket_engine"
+    },
+    "M": {
+      "item": "interplanetary:methane_ice"
+    },
+    "C": {
+      "item": "interplanetary:solar_crystal_block"
+    }
+  },
+  "result": {
+    "id": "interplanetary:fusion_engine",
+    "count": 1
+  }
+}

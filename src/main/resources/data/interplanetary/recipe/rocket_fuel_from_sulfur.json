@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "interplanetary:sulfur"
+    },
+    {
+      "item": "interplanetary:sulfur"
+    },
+    {
+      "tag": "minecraft:coals"
+    }
+  ],
+  "result": {
+    "id": "interplanetary:rocket_fuel",
+    "count": 1
+  }
+}

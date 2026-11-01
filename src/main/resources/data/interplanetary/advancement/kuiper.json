@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:eris_frost"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.kuiper.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.kuiper.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_eris": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:eris"
+      }
+    },
+    "visit_haumea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:haumea"
+      }
+    },
+    "visit_makemake": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:makemake"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_3",
+  "requirements": [
+    [
+      "visit_eris",
+      "visit_haumea",
+      "visit_makemake"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/europa_ice"
+      },
+      {
+        "model": "interplanetary:block/europa_ice",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/europa_ice",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/europa_ice",
+        "y": 270
+      }
+    ]
+  }
+}

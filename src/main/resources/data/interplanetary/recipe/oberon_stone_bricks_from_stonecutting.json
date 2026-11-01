@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:oberon_stone"
+  },
+  "result": {
+    "id": "interplanetary:oberon_stone_bricks",
+    "count": 1
+  }
+}

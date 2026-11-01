@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:deimos",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:deimos",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:deimos"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "interplanetary:europa_ice"
+    }
+  },
+  "result": {
+    "id": "interplanetary:europa_ice_bricks",
+    "count": 4
+  }
+}

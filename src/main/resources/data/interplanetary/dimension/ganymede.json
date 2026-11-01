@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:ganymede",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:ganymede",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:ganymede"
+    }
+  }
+}

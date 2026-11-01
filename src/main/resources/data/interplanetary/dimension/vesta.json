@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:vesta",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:vesta",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:vesta"
+    }
+  }
+}

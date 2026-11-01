@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:triton_frost"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.neptune.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.neptune.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_triton": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:triton"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_3"
+}

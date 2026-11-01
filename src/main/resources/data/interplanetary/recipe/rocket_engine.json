@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "PBP",
+    "F F"
+  ],
+  "key": {
+    "P": {
+      "item": "interplanetary:iron_plating"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "result": {
+    "id": "interplanetary:rocket_engine",
+    "count": 1
+  }
+}

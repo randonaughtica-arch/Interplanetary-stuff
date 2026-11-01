@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:rhea",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:rhea",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:rhea"
+    }
+  }
+}

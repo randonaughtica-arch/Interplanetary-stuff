@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "interplanetary:iridium_block",
+    "interplanetary:psyche_gold_ore",
+    "interplanetary:psyche_iridium_ore",
+    "interplanetary:vesta_diamond_ore"
+  ]
+}

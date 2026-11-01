@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:umbriel_stone"
+  },
+  "result": {
+    "id": "interplanetary:umbriel_stone_bricks",
+    "count": 1
+  }
+}

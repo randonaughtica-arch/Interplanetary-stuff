@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:triton_stone"
+  },
+  "result": {
+    "id": "interplanetary:triton_stone_bricks",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "interplanetary:deimos_stone"
+    }
+  },
+  "result": {
+    "id": "interplanetary:deimos_stone_bricks",
+    "count": 4
+  }
+}

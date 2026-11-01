@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:phobos",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:phobos",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:phobos"
+    }
+  }
+}

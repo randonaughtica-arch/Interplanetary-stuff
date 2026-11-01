@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "key": {
+    "C": {
+      "item": "interplanetary:solar_crystal"
+    }
+  },
+  "result": {
+    "id": "interplanetary:solar_crystal_block",
+    "count": 1
+  }
+}

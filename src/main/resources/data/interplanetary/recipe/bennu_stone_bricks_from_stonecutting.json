@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:bennu_stone"
+  },
+  "result": {
+    "id": "interplanetary:bennu_stone_bricks",
+    "count": 1
+  }
+}

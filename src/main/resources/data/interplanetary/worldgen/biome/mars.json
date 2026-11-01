@@ -1,0 +1,66 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.3,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 13214334,
+    "fog_color": 12618336,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.004
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:husk",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "interplanetary:lava_tubes"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "interplanetary:mars/crater"
+    ],
+    [],
+    [],
+    [],
+    [
+      "interplanetary:mars/iron_ore",
+      "interplanetary:mars/titanium_ore"
+    ],
+    [],
+    [],
+    [
+      "interplanetary:mars/boulder"
+    ],
+    []
+  ]
+}

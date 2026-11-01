@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:charon_stone"
+  },
+  "result": {
+    "id": "interplanetary:charon_stone_bricks",
+    "count": 1
+  }
+}

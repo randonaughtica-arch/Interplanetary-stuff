@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/makemake_frost"
+      },
+      {
+        "model": "interplanetary:block/makemake_frost",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/makemake_frost",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/makemake_frost",
+        "y": 270
+      }
+    ]
+  }
+}

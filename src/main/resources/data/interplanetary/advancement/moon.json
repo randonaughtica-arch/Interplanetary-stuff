@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:moon_regolith"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.moon.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.moon.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_moon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:moon"
+      }
+    }
+  },
+  "parent": "interplanetary:rocket_science"
+}

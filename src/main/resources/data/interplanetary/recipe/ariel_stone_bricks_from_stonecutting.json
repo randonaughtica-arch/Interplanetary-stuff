@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:ariel_stone"
+  },
+  "result": {
+    "id": "interplanetary:ariel_stone_bricks",
+    "count": 1
+  }
+}

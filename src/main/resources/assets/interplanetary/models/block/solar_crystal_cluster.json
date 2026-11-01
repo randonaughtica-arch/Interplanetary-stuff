@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "interplanetary:block/solar_crystal_cluster"
+  }
+}

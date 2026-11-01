@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "IRI",
+    "IFI"
+  ],
+  "key": {
+    "I": {
+      "item": "interplanetary:iridium_plating"
+    },
+    "R": {
+      "item": "interplanetary:rocket_tier_2"
+    },
+    "F": {
+      "item": "interplanetary:fusion_engine"
+    }
+  },
+  "result": {
+    "id": "interplanetary:rocket_tier_3",
+    "count": 1
+  }
+}

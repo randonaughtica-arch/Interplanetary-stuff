@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:rocket_tier_2"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.tier_2.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.tier_2.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_rocket_tier_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "interplanetary:rocket_tier_2"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "interplanetary:moon"
+}

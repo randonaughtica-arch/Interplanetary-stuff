@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:enceladus_ice"
+  },
+  "result": {
+    "id": "interplanetary:enceladus_ice_bricks",
+    "count": 1
+  }
+}

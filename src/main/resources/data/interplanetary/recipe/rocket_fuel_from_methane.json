@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "interplanetary:methane_ice"
+    },
+    {
+      "item": "interplanetary:methane_ice"
+    }
+  ],
+  "result": {
+    "id": "interplanetary:rocket_fuel",
+    "count": 2
+  }
+}

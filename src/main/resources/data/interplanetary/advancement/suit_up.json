@@ -1,0 +1,60 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:space_helmet"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.suit_up.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.suit_up.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_space_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "interplanetary:space_helmet"
+          }
+        ]
+      }
+    },
+    "has_space_suit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "interplanetary:space_suit"
+          }
+        ]
+      }
+    },
+    "has_space_pants": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "interplanetary:space_pants"
+          }
+        ]
+      }
+    },
+    "has_space_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "interplanetary:space_boots"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "interplanetary:root"
+}

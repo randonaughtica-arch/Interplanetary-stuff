@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "interplanetary:vesta_stone"
+    }
+  },
+  "result": {
+    "id": "interplanetary:vesta_stone_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:rhea_stone"
+  },
+  "result": {
+    "id": "interplanetary:rhea_stone_bricks",
+    "count": 1
+  }
+}

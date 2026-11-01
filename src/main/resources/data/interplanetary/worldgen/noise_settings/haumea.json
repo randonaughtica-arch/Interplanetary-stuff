@@ -1,0 +1,361 @@
+{
+  "sea_level": 0,
+  "disable_mob_generation": false,
+  "aquifers_enabled": false,
+  "ore_veins_enabled": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "Name": "interplanetary:haumea_stone"
+  },
+  "default_fluid": {
+    "Name": "minecraft:water",
+    "Properties": {
+      "level": "0"
+    }
+  },
+  "noise": {
+    "min_y": 0,
+    "height": 256,
+    "size_horizontal": 1,
+    "size_vertical": 2
+  },
+  "noise_router": {
+    "barrier": 0.0,
+    "fluid_level_floodedness": 0.0,
+    "fluid_level_spread": 0.0,
+    "lava": 0.0,
+    "temperature": {
+      "type": "minecraft:noise",
+      "noise": "interplanetary:haumea/biome",
+      "xz_scale": 1.0,
+      "y_scale": 0.0
+    },
+    "vegetation": 0.0,
+    "continents": {
+      "type": "minecraft:noise",
+      "noise": "interplanetary:haumea/large",
+      "xz_scale": 1.0,
+      "y_scale": 0.0
+    },
+    "erosion": {
+      "type": "minecraft:noise",
+      "noise": "interplanetary:haumea/medium",
+      "xz_scale": 1.0,
+      "y_scale": 0.0
+    },
+    "depth": 0.0,
+    "ridges": 0.0,
+    "initial_density_without_jaggedness": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:cache_2d",
+          "argument": {
+            "type": "minecraft:add",
+            "argument1": {
+              "type": "minecraft:add",
+              "argument1": {
+                "type": "minecraft:add",
+                "argument1": {
+                  "type": "minecraft:add",
+                  "argument1": 66.0,
+                  "argument2": {
+                    "type": "minecraft:mul",
+                    "argument1": 10.0,
+                    "argument2": {
+                      "type": "minecraft:noise",
+                      "noise": "interplanetary:haumea/large",
+                      "xz_scale": 1.0,
+                      "y_scale": 0.0
+                    }
+                  }
+                },
+                "argument2": {
+                  "type": "minecraft:mul",
+                  "argument1": 5.0,
+                  "argument2": {
+                    "type": "minecraft:noise",
+                    "noise": "interplanetary:haumea/medium",
+                    "xz_scale": 1.0,
+                    "y_scale": 0.0
+                  }
+                }
+              },
+              "argument2": {
+                "type": "minecraft:mul",
+                "argument1": 1.0,
+                "argument2": {
+                  "type": "minecraft:noise",
+                  "noise": "interplanetary:haumea/detail",
+                  "xz_scale": 1.0,
+                  "y_scale": 0.0
+                }
+              }
+            },
+            "argument2": {
+              "type": "minecraft:mul",
+              "argument1": 12.0,
+              "argument2": {
+                "type": "minecraft:mul",
+                "argument1": {
+                  "type": "minecraft:clamp",
+                  "input": {
+                    "type": "minecraft:add",
+                    "argument1": {
+                      "type": "minecraft:mul",
+                      "argument1": 2.0,
+                      "argument2": {
+                        "type": "minecraft:noise",
+                        "noise": "interplanetary:haumea/large",
+                        "xz_scale": 1.0,
+                        "y_scale": 0.0
+                      }
+                    },
+                    "argument2": 0.0
+                  },
+                  "min": 0.0,
+                  "max": 1.0
+                },
+                "argument2": {
+                  "type": "minecraft:square",
+                  "argument": {
+                    "type": "minecraft:add",
+                    "argument1": 1.0,
+                    "argument2": {
+                      "type": "minecraft:mul",
+                      "argument1": -1.0,
+                      "argument2": {
+                        "type": "minecraft:abs",
+                        "argument": {
+                          "type": "minecraft:noise",
+                          "noise": "interplanetary:haumea/ridge",
+                          "xz_scale": 1.0,
+                          "y_scale": 0.0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "argument2": 0.125
+      },
+      "argument2": {
+        "type": "minecraft:y_clamped_gradient",
+        "from_y": -64,
+        "to_y": 320,
+        "from_value": 8.0,
+        "to_value": -40.0
+      }
+    },
+    "final_density": {
+      "type": "minecraft:interpolated",
+      "argument": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:mul",
+          "argument1": {
+            "type": "minecraft:cache_2d",
+            "argument": {
+              "type": "minecraft:add",
+              "argument1": {
+                "type": "minecraft:add",
+                "argument1": {
+                  "type": "minecraft:add",
+                  "argument1": {
+                    "type": "minecraft:add",
+                    "argument1": 66.0,
+                    "argument2": {
+                      "type": "minecraft:mul",
+                      "argument1": 10.0,
+                      "argument2": {
+                        "type": "minecraft:noise",
+                        "noise": "interplanetary:haumea/large",
+                        "xz_scale": 1.0,
+                        "y_scale": 0.0
+                      }
+                    }
+                  },
+                  "argument2": {
+                    "type": "minecraft:mul",
+                    "argument1": 5.0,
+                    "argument2": {
+                      "type": "minecraft:noise",
+                      "noise": "interplanetary:haumea/medium",
+                      "xz_scale": 1.0,
+                      "y_scale": 0.0
+                    }
+                  }
+                },
+                "argument2": {
+                  "type": "minecraft:mul",
+                  "argument1": 1.0,
+                  "argument2": {
+                    "type": "minecraft:noise",
+                    "noise": "interplanetary:haumea/detail",
+                    "xz_scale": 1.0,
+                    "y_scale": 0.0
+                  }
+                }
+              },
+              "argument2": {
+                "type": "minecraft:mul",
+                "argument1": 12.0,
+                "argument2": {
+                  "type": "minecraft:mul",
+                  "argument1": {
+                    "type": "minecraft:clamp",
+                    "input": {
+                      "type": "minecraft:add",
+                      "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": 2.0,
+                        "argument2": {
+                          "type": "minecraft:noise",
+                          "noise": "interplanetary:haumea/large",
+                          "xz_scale": 1.0,
+                          "y_scale": 0.0
+                        }
+                      },
+                      "argument2": 0.0
+                    },
+                    "min": 0.0,
+                    "max": 1.0
+                  },
+                  "argument2": {
+                    "type": "minecraft:square",
+                    "argument": {
+                      "type": "minecraft:add",
+                      "argument1": 1.0,
+                      "argument2": {
+                        "type": "minecraft:mul",
+                        "argument1": -1.0,
+                        "argument2": {
+                          "type": "minecraft:abs",
+                          "argument": {
+                            "type": "minecraft:noise",
+                            "noise": "interplanetary:haumea/ridge",
+                            "xz_scale": 1.0,
+                            "y_scale": 0.0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "argument2": 0.125
+        },
+        "argument2": {
+          "type": "minecraft:y_clamped_gradient",
+          "from_y": -64,
+          "to_y": 320,
+          "from_value": 8.0,
+          "to_value": -40.0
+        }
+      }
+    },
+    "vein_toggle": 0.0,
+    "vein_ridged": 0.0,
+    "vein_gap": 0.0
+  },
+  "spawn_target": [],
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "random_name": "interplanetary:haumea/bedrock_floor",
+          "true_at_and_below": {
+            "above_bottom": 0
+          },
+          "false_at_and_above": {
+            "above_bottom": 5
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:bedrock"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "offset": 0,
+          "add_surface_depth": false,
+          "secondary_depth_range": 0,
+          "surface_type": "floor"
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:steep"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "interplanetary:haumea_stone"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:water",
+                "offset": -1,
+                "surface_depth_multiplier": 0,
+                "add_stone_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:sequence",
+                "sequence": [
+                  {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "interplanetary:haumea_ice"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "interplanetary:haumea_ice"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "offset": 0,
+          "add_surface_depth": true,
+          "secondary_depth_range": 0,
+          "surface_type": "floor"
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "interplanetary:haumea_ice"
+          }
+        }
+      }
+    ]
+  }
+}

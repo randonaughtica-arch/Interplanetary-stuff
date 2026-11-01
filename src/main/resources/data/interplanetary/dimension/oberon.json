@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:oberon",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:oberon",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:oberon"
+    }
+  }
+}

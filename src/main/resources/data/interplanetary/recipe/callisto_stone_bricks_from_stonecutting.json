@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:callisto_stone"
+  },
+  "result": {
+    "id": "interplanetary:callisto_stone_bricks",
+    "count": 1
+  }
+}

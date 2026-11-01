@@ -1,0 +1,18 @@
+{
+  "type": "interplanetary:crater",
+  "config": {
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 6,
+      "max_inclusive": 14
+    },
+    "depth": 0.42,
+    "rim": 0.24,
+    "floor": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:packed_ice"
+      }
+    }
+  }
+}

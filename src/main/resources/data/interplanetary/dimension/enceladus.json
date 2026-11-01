@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:enceladus",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:enceladus",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:enceladus"
+    }
+  }
+}

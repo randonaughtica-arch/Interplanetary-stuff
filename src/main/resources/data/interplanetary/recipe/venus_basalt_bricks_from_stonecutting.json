@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:venus_basalt"
+  },
+  "result": {
+    "id": "interplanetary:venus_basalt_bricks",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:iapetus_stone"
+  },
+  "result": {
+    "id": "interplanetary:iapetus_stone_bricks",
+    "count": 1
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:titan_sand"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.saturn.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.saturn.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_titan": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:titan"
+      }
+    },
+    "visit_enceladus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:enceladus"
+      }
+    },
+    "visit_mimas": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:mimas"
+      }
+    },
+    "visit_rhea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:rhea"
+      }
+    },
+    "visit_iapetus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:iapetus"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_2",
+  "requirements": [
+    [
+      "visit_titan",
+      "visit_enceladus",
+      "visit_mimas",
+      "visit_rhea",
+      "visit_iapetus"
+    ]
+  ]
+}

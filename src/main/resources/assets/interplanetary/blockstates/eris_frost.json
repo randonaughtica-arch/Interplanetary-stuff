@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/eris_frost"
+      },
+      {
+        "model": "interplanetary:block/eris_frost",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/eris_frost",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/eris_frost",
+        "y": 270
+      }
+    ]
+  }
+}

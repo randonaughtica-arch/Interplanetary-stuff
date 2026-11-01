@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:ganymede_stone"
+  },
+  "result": {
+    "id": "interplanetary:ganymede_stone_bricks",
+    "count": 1
+  }
+}

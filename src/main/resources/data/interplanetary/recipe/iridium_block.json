@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "interplanetary:iridium_ingot"
+    }
+  },
+  "result": {
+    "id": "interplanetary:iridium_block",
+    "count": 1
+  }
+}

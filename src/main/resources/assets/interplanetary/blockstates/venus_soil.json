@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/venus_soil"
+      },
+      {
+        "model": "interplanetary:block/venus_soil",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/venus_soil",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/venus_soil",
+        "y": 270
+      }
+    ]
+  }
+}

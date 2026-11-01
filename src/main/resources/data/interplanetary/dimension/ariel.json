@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:ariel",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:ariel",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:ariel"
+    }
+  }
+}

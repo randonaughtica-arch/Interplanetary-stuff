@@ -1,0 +1,18 @@
+{
+  "type": "interplanetary:crater",
+  "config": {
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 5,
+      "max_inclusive": 12
+    },
+    "depth": 0.4,
+    "rim": 0.2,
+    "floor": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "interplanetary:bright_salt"
+      }
+    }
+  }
+}

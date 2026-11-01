@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:psyche_nickel_iron"
+  },
+  "result": {
+    "id": "interplanetary:psyche_nickel_iron_bricks",
+    "count": 1
+  }
+}

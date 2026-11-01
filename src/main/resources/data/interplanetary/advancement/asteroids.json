@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:psyche_nickel_iron"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.asteroids.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.asteroids.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_ceres": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:ceres"
+      }
+    },
+    "visit_vesta": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:vesta"
+      }
+    },
+    "visit_psyche": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:psyche"
+      }
+    },
+    "visit_bennu": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:bennu"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_2",
+  "requirements": [
+    [
+      "visit_ceres",
+      "visit_vesta",
+      "visit_psyche",
+      "visit_bennu"
+    ]
+  ]
+}

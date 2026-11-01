@@ -1,0 +1,203 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:star_chart"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.grand_tour.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.grand_tour.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_moon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:moon"
+      }
+    },
+    "visit_mercury": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:mercury"
+      }
+    },
+    "visit_venus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:venus"
+      }
+    },
+    "visit_mars": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:mars"
+      }
+    },
+    "visit_phobos": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:phobos"
+      }
+    },
+    "visit_deimos": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:deimos"
+      }
+    },
+    "visit_ceres": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:ceres"
+      }
+    },
+    "visit_vesta": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:vesta"
+      }
+    },
+    "visit_psyche": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:psyche"
+      }
+    },
+    "visit_bennu": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:bennu"
+      }
+    },
+    "visit_io": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:io"
+      }
+    },
+    "visit_europa": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:europa"
+      }
+    },
+    "visit_ganymede": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:ganymede"
+      }
+    },
+    "visit_callisto": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:callisto"
+      }
+    },
+    "visit_titan": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:titan"
+      }
+    },
+    "visit_enceladus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:enceladus"
+      }
+    },
+    "visit_mimas": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:mimas"
+      }
+    },
+    "visit_rhea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:rhea"
+      }
+    },
+    "visit_iapetus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:iapetus"
+      }
+    },
+    "visit_miranda": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:miranda"
+      }
+    },
+    "visit_ariel": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:ariel"
+      }
+    },
+    "visit_umbriel": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:umbriel"
+      }
+    },
+    "visit_titania": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:titania"
+      }
+    },
+    "visit_oberon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:oberon"
+      }
+    },
+    "visit_triton": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:triton"
+      }
+    },
+    "visit_pluto": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:pluto"
+      }
+    },
+    "visit_charon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:charon"
+      }
+    },
+    "visit_eris": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:eris"
+      }
+    },
+    "visit_haumea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:haumea"
+      }
+    },
+    "visit_makemake": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:makemake"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_3",
+  "rewards": {
+    "experience": 1000
+  }
+}

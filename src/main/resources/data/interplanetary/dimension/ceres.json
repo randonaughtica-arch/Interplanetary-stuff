@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:ceres",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:ceres",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:ceres"
+    }
+  }
+}

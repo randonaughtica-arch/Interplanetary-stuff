@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:rocket_tier_1"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.root.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "interplanetary:textures/block/moon_regolith.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

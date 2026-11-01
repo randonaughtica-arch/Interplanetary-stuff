@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "interplanetary:mercury_solar_crystal_ore"
+  },
+  "result": {
+    "id": "interplanetary:solar_crystal"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

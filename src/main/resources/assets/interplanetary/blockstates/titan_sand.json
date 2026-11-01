@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/titan_sand"
+      },
+      {
+        "model": "interplanetary:block/titan_sand",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/titan_sand",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/titan_sand",
+        "y": 270
+      }
+    ]
+  }
+}

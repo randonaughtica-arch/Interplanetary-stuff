@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "interplanetary:raw_iridium"
+  },
+  "result": {
+    "id": "interplanetary:iridium_ingot"
+  },
+  "experience": 0.8,
+  "cookingtime": 100
+}

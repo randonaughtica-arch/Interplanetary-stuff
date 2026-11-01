@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "TET",
+    "SCS"
+  ],
+  "key": {
+    "T": {
+      "item": "interplanetary:titanium_plating"
+    },
+    "E": {
+      "item": "interplanetary:rocket_engine"
+    },
+    "S": {
+      "item": "interplanetary:sulfur"
+    },
+    "C": {
+      "item": "interplanetary:solar_crystal"
+    }
+  },
+  "result": {
+    "id": "interplanetary:advanced_rocket_engine",
+    "count": 1
+  }
+}

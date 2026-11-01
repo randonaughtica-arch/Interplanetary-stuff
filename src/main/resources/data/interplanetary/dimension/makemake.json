@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:makemake",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:makemake",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:makemake"
+    }
+  }
+}

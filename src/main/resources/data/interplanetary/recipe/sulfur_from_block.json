@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "interplanetary:sulfur_block"
+    }
+  ],
+  "result": {
+    "id": "interplanetary:sulfur",
+    "count": 9
+  }
+}

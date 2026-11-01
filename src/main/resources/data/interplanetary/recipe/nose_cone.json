@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "PRP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "interplanetary:iron_plating"
+    },
+    "R": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "result": {
+    "id": "interplanetary:nose_cone",
+    "count": 1
+  }
+}

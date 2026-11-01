@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:pluto_frost"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.pluto.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.pluto.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_pluto": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:pluto"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_3"
+}

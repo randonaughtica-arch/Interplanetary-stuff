@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:europa_ice"
+  },
+  "result": {
+    "id": "interplanetary:europa_ice_bricks",
+    "count": 1
+  }
+}

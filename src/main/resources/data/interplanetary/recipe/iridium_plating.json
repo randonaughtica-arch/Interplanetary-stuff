@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "interplanetary:iridium_ingot"
+    }
+  },
+  "result": {
+    "id": "interplanetary:iridium_plating",
+    "count": 1
+  }
+}

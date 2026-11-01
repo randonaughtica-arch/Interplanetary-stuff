@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/triton_frost"
+      },
+      {
+        "model": "interplanetary:block/triton_frost",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/triton_frost",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/triton_frost",
+        "y": 270
+      }
+    ]
+  }
+}

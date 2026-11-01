@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "interplanetary:io_sulfur_ore",
+    "interplanetary:mars_iron_ore",
+    "interplanetary:mars_titanium_ore",
+    "interplanetary:mercury_solar_crystal_ore",
+    "interplanetary:moon_iron_ore",
+    "interplanetary:moon_titanium_ore",
+    "interplanetary:psyche_nickel_iron",
+    "interplanetary:titanium_block",
+    "interplanetary:venus_sulfur_ore"
+  ]
+}

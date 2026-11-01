@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/io_sulfur_crust"
+      },
+      {
+        "model": "interplanetary:block/io_sulfur_crust",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/io_sulfur_crust",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/io_sulfur_crust",
+        "y": 270
+      }
+    ]
+  }
+}

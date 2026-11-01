@@ -1,0 +1,16 @@
+{
+  "type": "interplanetary:boulder",
+  "config": {
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "interplanetary:pluto_stone"
+      }
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 1,
+      "max_inclusive": 3
+    }
+  }
+}

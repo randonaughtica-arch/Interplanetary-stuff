@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "interplanetary:block/psyche_nickel_iron"
+  }
+}

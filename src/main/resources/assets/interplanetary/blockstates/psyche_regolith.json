@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/psyche_regolith"
+      },
+      {
+        "model": "interplanetary:block/psyche_regolith",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/psyche_regolith",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/psyche_regolith",
+        "y": 270
+      }
+    ]
+  }
+}

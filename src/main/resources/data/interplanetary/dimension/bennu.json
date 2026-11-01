@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:bennu",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:bennu",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:bennu"
+    }
+  }
+}

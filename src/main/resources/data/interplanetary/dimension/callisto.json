@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:callisto",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:callisto",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:callisto"
+    }
+  }
+}

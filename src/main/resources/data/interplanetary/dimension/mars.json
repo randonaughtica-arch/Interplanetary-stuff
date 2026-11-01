@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:mars",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:mars",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:mars"
+    }
+  }
+}

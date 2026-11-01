@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "interplanetary:psyche_nickel_iron"
+    }
+  },
+  "result": {
+    "id": "interplanetary:psyche_nickel_iron_bricks",
+    "count": 4
+  }
+}

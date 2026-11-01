@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:miranda_regolith"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.uranus.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.uranus.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_miranda": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:miranda"
+      }
+    },
+    "visit_ariel": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:ariel"
+      }
+    },
+    "visit_umbriel": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:umbriel"
+      }
+    },
+    "visit_titania": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:titania"
+      }
+    },
+    "visit_oberon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:oberon"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_3",
+  "requirements": [
+    [
+      "visit_miranda",
+      "visit_ariel",
+      "visit_umbriel",
+      "visit_titania",
+      "visit_oberon"
+    ]
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.welcome_home.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.welcome_home.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "from_moon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:moon",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_mercury": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:mercury",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_venus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:venus",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_mars": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:mars",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_phobos": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:phobos",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_deimos": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:deimos",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_ceres": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:ceres",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_vesta": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:vesta",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_psyche": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:psyche",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_bennu": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:bennu",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_io": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:io",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_europa": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:europa",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_ganymede": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:ganymede",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_callisto": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:callisto",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_titan": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:titan",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_enceladus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:enceladus",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_mimas": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:mimas",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_rhea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:rhea",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_iapetus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:iapetus",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_miranda": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:miranda",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_ariel": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:ariel",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_umbriel": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:umbriel",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_titania": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:titania",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_oberon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:oberon",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_triton": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:triton",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_pluto": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:pluto",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_charon": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:charon",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_eris": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:eris",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_haumea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:haumea",
+        "to": "minecraft:overworld"
+      }
+    },
+    "from_makemake": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "interplanetary:makemake",
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "parent": "interplanetary:moon",
+  "requirements": [
+    [
+      "from_moon",
+      "from_mercury",
+      "from_venus",
+      "from_mars",
+      "from_phobos",
+      "from_deimos",
+      "from_ceres",
+      "from_vesta",
+      "from_psyche",
+      "from_bennu",
+      "from_io",
+      "from_europa",
+      "from_ganymede",
+      "from_callisto",
+      "from_titan",
+      "from_enceladus",
+      "from_mimas",
+      "from_rhea",
+      "from_iapetus",
+      "from_miranda",
+      "from_ariel",
+      "from_umbriel",
+      "from_titania",
+      "from_oberon",
+      "from_triton",
+      "from_pluto",
+      "from_charon",
+      "from_eris",
+      "from_haumea",
+      "from_makemake"
+    ]
+  ]
+}

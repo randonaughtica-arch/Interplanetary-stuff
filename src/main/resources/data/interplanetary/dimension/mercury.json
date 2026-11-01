@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:mercury",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:mercury",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:mercury"
+    }
+  }
+}

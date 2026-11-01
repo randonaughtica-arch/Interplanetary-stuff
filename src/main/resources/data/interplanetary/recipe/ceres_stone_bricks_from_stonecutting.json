@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:ceres_stone"
+  },
+  "result": {
+    "id": "interplanetary:ceres_stone_bricks",
+    "count": 1
+  }
+}

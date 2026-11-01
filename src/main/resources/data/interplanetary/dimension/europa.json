@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:europa",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:europa",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:europa"
+    }
+  }
+}

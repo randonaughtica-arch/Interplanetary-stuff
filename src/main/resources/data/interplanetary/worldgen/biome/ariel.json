@@ -1,0 +1,57 @@
+{
+  "has_precipitation": false,
+  "temperature": -0.6,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:stray",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "interplanetary:lava_tubes"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "interplanetary:ariel/crater"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "interplanetary:ariel/boulder"
+    ],
+    []
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:psyche",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:psyche",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:psyche"
+    }
+  }
+}

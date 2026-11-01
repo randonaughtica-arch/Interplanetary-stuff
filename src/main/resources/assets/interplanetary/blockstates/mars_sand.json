@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "interplanetary:block/mars_sand"
+      },
+      {
+        "model": "interplanetary:block/mars_sand",
+        "y": 90
+      },
+      {
+        "model": "interplanetary:block/mars_sand",
+        "y": 180
+      },
+      {
+        "model": "interplanetary:block/mars_sand",
+        "y": 270
+      }
+    ]
+  }
+}

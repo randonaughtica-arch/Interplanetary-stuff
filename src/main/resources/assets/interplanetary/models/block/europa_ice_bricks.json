@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "interplanetary:block/europa_ice_bricks"
+  }
+}

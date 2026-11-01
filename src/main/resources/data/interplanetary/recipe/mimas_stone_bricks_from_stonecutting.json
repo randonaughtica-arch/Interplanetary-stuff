@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:mimas_stone"
+  },
+  "result": {
+    "id": "interplanetary:mimas_stone_bricks",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:deimos_stone"
+  },
+  "result": {
+    "id": "interplanetary:deimos_stone_bricks",
+    "count": 1
+  }
+}

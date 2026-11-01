@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:mars_sand"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.mars.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.mars.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_mars": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:mars"
+      }
+    }
+  },
+  "parent": "interplanetary:moon"
+}

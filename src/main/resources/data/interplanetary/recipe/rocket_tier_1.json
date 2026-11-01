@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "PGP",
+    "FEF"
+  ],
+  "key": {
+    "N": {
+      "item": "interplanetary:nose_cone"
+    },
+    "P": {
+      "item": "interplanetary:iron_plating"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "F": {
+      "item": "interplanetary:rocket_fin"
+    },
+    "E": {
+      "item": "interplanetary:rocket_engine"
+    }
+  },
+  "result": {
+    "id": "interplanetary:rocket_tier_1",
+    "count": 1
+  }
+}

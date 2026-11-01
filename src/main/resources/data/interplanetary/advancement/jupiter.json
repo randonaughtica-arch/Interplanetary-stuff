@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:io_sulfur_crust"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.jupiter.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.jupiter.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_io": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:io"
+      }
+    },
+    "visit_europa": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:europa"
+      }
+    },
+    "visit_ganymede": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:ganymede"
+      }
+    },
+    "visit_callisto": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:callisto"
+      }
+    }
+  },
+  "parent": "interplanetary:tier_2",
+  "requirements": [
+    [
+      "visit_io",
+      "visit_europa",
+      "visit_ganymede",
+      "visit_callisto"
+    ]
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "has_precipitation": false,
+  "temperature": 2.0,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 14198872,
+    "fog_color": 13146192,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.02
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:magma_cube",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:blaze",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "interplanetary:lava_tubes"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "interplanetary:venus/lava_lake"
+    ],
+    [
+      "interplanetary:venus/crater"
+    ],
+    [],
+    [],
+    [],
+    [
+      "interplanetary:venus/sulfur_ore"
+    ],
+    [
+      "interplanetary:venus/sulfur_deposit"
+    ],
+    [],
+    [
+      "interplanetary:venus/pumice_boulder",
+      "interplanetary:venus/basalt_column"
+    ],
+    []
+  ]
+}

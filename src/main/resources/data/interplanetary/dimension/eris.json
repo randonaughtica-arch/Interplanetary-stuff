@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:eris",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:eris",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:eris"
+    }
+  }
+}

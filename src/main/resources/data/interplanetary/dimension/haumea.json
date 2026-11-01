@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:haumea",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:haumea",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:haumea"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "interplanetary:phobos_regolith"
+    },
+    "title": {
+      "translate": "advancements.interplanetary.mars_moons.title"
+    },
+    "description": {
+      "translate": "advancements.interplanetary.mars_moons.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_phobos": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:phobos"
+      }
+    },
+    "visit_deimos": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "interplanetary:deimos"
+      }
+    }
+  },
+  "parent": "interplanetary:mars"
+}

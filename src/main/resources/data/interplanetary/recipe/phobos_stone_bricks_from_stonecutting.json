@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "interplanetary:phobos_stone"
+  },
+  "result": {
+    "id": "interplanetary:phobos_stone_bricks",
+    "count": 1
+  }
+}

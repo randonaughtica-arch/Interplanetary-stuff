@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:io",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:io",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:io"
+    }
+  }
+}

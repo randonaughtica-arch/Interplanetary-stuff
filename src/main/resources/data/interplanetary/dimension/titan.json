@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:titan",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:titan",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:titan"
+    }
+  }
+}

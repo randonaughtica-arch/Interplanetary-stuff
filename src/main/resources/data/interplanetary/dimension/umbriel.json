@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:umbriel",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:umbriel",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:umbriel"
+    }
+  }
+}

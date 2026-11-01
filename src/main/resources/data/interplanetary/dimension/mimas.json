@@ -1,0 +1,11 @@
+{
+  "type": "interplanetary:mimas",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "interplanetary:mimas",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "interplanetary:mimas"
+    }
+  }
+}
