@@ -42,6 +42,8 @@ public class SpaceSkyRenderer implements DimensionRenderingRegistry.SkyRenderer 
     private static final int PHASE_GRID = 4;
     private static final int PHASE_FRAMES = PHASE_GRID * PHASE_GRID;
     private static final float DISTANCE = 100.0F;
+    /** Half a texel of the 256px skybox faces. */
+    private static final float SKYBOX_INSET = 0.5F / 256.0F;
 
     /** Must match the galactic plane used by tools/generate.py for the skybox. */
     private static final Vector3f GALACTIC_NORMAL = new Vector3f(0.30F, 0.55F, 0.78F).normalize();
@@ -148,11 +150,14 @@ public class SpaceSkyRenderer implements DimensionRenderingRegistry.SkyRenderer 
                 }
             }
             Matrix4f m = matrices.peek().getPositionMatrix();
+            // Inset by half a texel so bilinear filtering never wraps around to the opposite edge (visible seams).
+            float lo = SKYBOX_INSET;
+            float hi = 1.0F - SKYBOX_INSET;
             BufferBuilder buffer = Tessellator.getInstance().begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_TEXTURE_COLOR);
-            buffer.vertex(m, -100.0F, -100.0F, -100.0F).texture(0.0F, 0.0F).color(1.0F, 1.0F, 1.0F, alpha);
-            buffer.vertex(m, -100.0F, -100.0F, 100.0F).texture(0.0F, 1.0F).color(1.0F, 1.0F, 1.0F, alpha);
-            buffer.vertex(m, 100.0F, -100.0F, 100.0F).texture(1.0F, 1.0F).color(1.0F, 1.0F, 1.0F, alpha);
-            buffer.vertex(m, 100.0F, -100.0F, -100.0F).texture(1.0F, 0.0F).color(1.0F, 1.0F, 1.0F, alpha);
+            buffer.vertex(m, -100.0F, -100.0F, -100.0F).texture(lo, lo).color(1.0F, 1.0F, 1.0F, alpha);
+            buffer.vertex(m, -100.0F, -100.0F, 100.0F).texture(lo, hi).color(1.0F, 1.0F, 1.0F, alpha);
+            buffer.vertex(m, 100.0F, -100.0F, 100.0F).texture(hi, hi).color(1.0F, 1.0F, 1.0F, alpha);
+            buffer.vertex(m, 100.0F, -100.0F, -100.0F).texture(hi, lo).color(1.0F, 1.0F, 1.0F, alpha);
             draw(buffer);
             matrices.pop();
         }

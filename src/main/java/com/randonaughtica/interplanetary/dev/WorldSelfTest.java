@@ -8,6 +8,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registries;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.crash.CrashException;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkSectionPos;
 import net.minecraft.world.Heightmap;
@@ -38,12 +39,21 @@ public final class WorldSelfTest {
             }
             try {
                 long start = System.currentTimeMillis();
+                // Generate a 9x9 chunk area so that every kind of feature gets placed a few times.
+                for (int cx = -4; cx <= 4; cx++) {
+                    for (int cz = -4; cz <= 4; cz++) {
+                        world.getChunk(cx, cz);
+                    }
+                }
                 BlockPos landing = SpaceTravel.findLandingSpot(world, 0, 0);
                 BlockState ground = world.getBlockState(landing.down());
                 if (ground.isAir() || !ground.getFluidState().isEmpty()) {
                     failures.add(body.id() + ": no solid ground at " + landing);
                 }
                 logTerrain(body, world, landing, ground, System.currentTimeMillis() - start);
+            } catch (CrashException e) {
+                InterplanetaryStuff.LOGGER.error("[selftest] {} failed to generate:\n{}", body.id(), e.getReport().asString());
+                failures.add(body.id() + ": " + e.getCause());
             } catch (RuntimeException e) {
                 InterplanetaryStuff.LOGGER.error("[selftest] {} failed to generate", body.id(), e);
                 failures.add(body.id() + ": " + e);

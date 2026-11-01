@@ -98,6 +98,7 @@ jobs:
           export LIBGL_ALWAYS_SOFTWARE=1
           timeout 900 xvfb-run -a -s "-screen 0 1280x720x24" ./gradlew runScreenshotClient --no-daemon --console=plain > client.log 2>&1 || echo "client exited with $?"
           grep -E "\[tour\]|tour|Exception|ERROR|Caused by" client.log | grep -v "OpenAL\|sound" | head -60 || true
+          grep -B 2 -A 40 "Exception generating new chunk" client.log | head -120 || true
           ls -la run/screenshots || true
 
       - name: Print screenshots
