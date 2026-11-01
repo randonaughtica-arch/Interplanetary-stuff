@@ -66,8 +66,25 @@ public final class ScreenshotTour {
         }
     }
 
+    private static int waitingTicks;
+
     private static void tick(MinecraftClient client) {
-        if (finished || client.player == null || client.world == null || client.getServer() == null) {
+        if (finished) {
+            return;
+        }
+        if (client.player == null || client.world == null || client.getServer() == null) {
+            // Diagnostics: report what is on screen while waiting to join the world.
+            waitingTicks++;
+            if (waitingTicks % 200 == 0) {
+                InterplanetaryStuff.LOGGER.info("[tour] waiting to join a world, screen: {}",
+                        client.currentScreen == null ? "none" : client.currentScreen.getClass().getName()
+                                + " - " + client.currentScreen.getTitle().getString());
+            }
+            if (waitingTicks > 6000) {
+                InterplanetaryStuff.LOGGER.error("[tour] never joined a world, giving up");
+                finished = true;
+                client.scheduleStop();
+            }
             return;
         }
         ticks++;
