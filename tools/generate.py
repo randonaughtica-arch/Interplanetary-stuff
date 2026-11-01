@@ -280,6 +280,8 @@ def cluster(name, block, count=2, chance=None, biomes=None):
 
 
 def lake(name, fluid, barrier, chance):
+    """Surface lake. Only use lava: water lakes check biomes outside the feature area and crash worldgen."""
+    assert fluid != "minecraft:water", "water lakes crash world generation"
     return Feature(name, {"type": "minecraft:lake", "config": {
         "fluid": simple_provider(fluid, {"level": "0"}), "barrier": simple_provider(barrier)}},
                    [{"type": "minecraft:rarity_filter", "chance": chance}, {"type": "minecraft:in_square"},
@@ -536,8 +538,9 @@ def define_content():
          surface=s.id, stone=st.id, sea_level=58, temperature=-0.3,
          sky=0xC07A30, fog=0xB0702A, water=0x3B2410, water_fog=0x1E1208, particle=("minecraft:mycelium", 0.003),
          terrain=dict(base=62, large=10, medium=5, detail=1, dunes=5),
-         features=[lake("methane_lake", "minecraft:water", "titan_stone", 10),
-                   disk("methane_ice", "methane_ice", ["titan_sand", "titan_stone"], 2, 4, chance=2),
+         # No water lakes: the vanilla lake feature looks up biomes (to freeze water) near the edge of the
+         # area a feature may touch and can crash world generation. Titan's seas come from its terrain.
+         features=[disk("methane_ice", "methane_ice", ["titan_sand", "titan_stone"], 2, 4, chance=2),
                    boulder("boulder", "titan_stone", 1, 2, chance=6)])
 
     s = surface("enceladus_snow", "Enceladus Snow", 0xF4F8FB, style="frost", map_color="WHITE", sound="SNOW",
