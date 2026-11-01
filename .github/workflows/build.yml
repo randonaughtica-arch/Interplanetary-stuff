@@ -23,7 +23,7 @@ jobs:
         run: python3 tools/validate.py
 
       - name: Build
-        run: ./gradlew build --stacktrace --no-daemon
+        run: ./gradlew build --no-daemon --console=plain
 
       # Boots a headless server, generates terrain on every world and runs the game tests.
       # The EULA must be accepted for the test server to start.
@@ -32,7 +32,7 @@ jobs:
           mkdir -p build/gametest
           echo "eula=true" > build/gametest/eula.txt
           set -o pipefail
-          ./gradlew runGametest --stacktrace --no-daemon 2>&1 | tee build/gametest.log
+          ./gradlew runGametest --no-daemon --console=plain 2>&1 | tee build/gametest.log
 
       - name: Check game log
         if: always()

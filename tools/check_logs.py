@@ -15,6 +15,11 @@ BENIGN = (
 
 
 def main(path: str) -> int:
+    try:
+        open(path).close()
+    except FileNotFoundError:
+        print(f"{path} not found - the game tests did not run (see the earlier steps).")
+        return 1
     with open(path, encoding="utf-8", errors="replace") as f:
         lines = f.read().splitlines()
 
