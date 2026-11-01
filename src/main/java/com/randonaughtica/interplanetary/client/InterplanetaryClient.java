@@ -3,6 +3,7 @@ package com.randonaughtica.interplanetary.client;
 import com.randonaughtica.interplanetary.InterplanetaryStuff;
 import com.randonaughtica.interplanetary.body.CelestialBodies;
 import com.randonaughtica.interplanetary.body.CelestialBody;
+import com.randonaughtica.interplanetary.client.dev.ScreenshotTour;
 import com.randonaughtica.interplanetary.client.render.RocketEntityModel;
 import com.randonaughtica.interplanetary.client.render.RocketEntityRenderer;
 import com.randonaughtica.interplanetary.client.render.RocketHud;
@@ -68,6 +69,8 @@ public final class InterplanetaryClient implements ClientModInitializer {
         StarChartItem.openScreen = InterplanetaryClient::openStarMap;
 
         HudRenderCallback.EVENT.register(RocketHud::render);
+
+        ScreenshotTour.init();
     }
 
     public static void openStarMap() {

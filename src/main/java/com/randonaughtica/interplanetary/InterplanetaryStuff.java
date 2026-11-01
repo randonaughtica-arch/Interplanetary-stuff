@@ -1,6 +1,8 @@
 package com.randonaughtica.interplanetary;
 
+import com.randonaughtica.interplanetary.body.CelestialBodies;
 import com.randonaughtica.interplanetary.command.InterplanetaryCommand;
+import com.randonaughtica.interplanetary.dev.WorldSelfTest;
 import com.randonaughtica.interplanetary.network.ModNetworking;
 import com.randonaughtica.interplanetary.registry.ModArmorMaterials;
 import com.randonaughtica.interplanetary.registry.ModBlocks;
@@ -13,9 +15,12 @@ import com.randonaughtica.interplanetary.world.GravityHandler;
 import com.randonaughtica.interplanetary.world.SpaceHazards;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 /**
  * Interplanetary Stuff — travel the Solar System by rocket.
@@ -48,7 +53,20 @@ public final class InterplanetaryStuff implements ModInitializer {
         CommandRegistrationCallback.EVENT.register(
                 (dispatcher, registryAccess, environment) -> InterplanetaryCommand.register(dispatcher));
 
+        // Development/CI helper (see the runCiServer task): generate every world, report, save and quit.
+        if (Boolean.getBoolean("interplanetary.ciSelfTest")) {
+            ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+                List<String> failures = WorldSelfTest.run(server);
+                if (failures.isEmpty()) {
+                    LOGGER.info("[selftest] PASSED: all {} worlds generated", CelestialBodies.destinations().size());
+                } else {
+                    LOGGER.error("[selftest] FAILED: {}", failures);
+                }
+                server.stop(false);
+            });
+        }
+
         LOGGER.info("Interplanetary Stuff loaded — {} destinations await!",
-                com.randonaughtica.interplanetary.body.CelestialBodies.all().size() - 1);
+                CelestialBodies.destinations().size());
     }
 }

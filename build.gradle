@@ -26,6 +26,22 @@ loom {
             vmArg "-Dfabric-api.gametest.report-file=${project.layout.buildDirectory.get().asFile}/junit.xml"
             runDir "build/gametest"
         }
+        // CI helpers: generate every world and save it (./gradlew runCiServer), then fly a client
+        // through it taking screenshots of the skies (./gradlew runScreenshotClient).
+        ciServer {
+            server()
+            name = "CI World Server"
+            vmArg "-Dinterplanetary.ciSelfTest=true"
+            programArg "nogui"
+            runDir "run"
+        }
+        screenshotClient {
+            client()
+            name = "Screenshot Tour"
+            vmArg "-Dinterplanetary.screenshotTour=true"
+            programArgs "--quickPlaySingleplayer", "ci_world"
+            runDir "run"
+        }
     }
 }
 

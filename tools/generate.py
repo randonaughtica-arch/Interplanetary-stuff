@@ -1560,6 +1560,13 @@ def write_lang():
         "system.interplanetary.pluto.desc": "A double world at the edge of the planetary realm.",
         "system.interplanetary.kuiper": "Kuiper Belt",
         "system.interplanetary.kuiper.desc": "Distant icy dwarf planets in the outer darkness.",
+        "tag.item.c.ingots.titanium": "Titanium Ingots",
+        "tag.item.c.ingots.iridium": "Iridium Ingots",
+        "tag.item.c.raw_materials.titanium": "Raw Titanium",
+        "tag.item.c.raw_materials.iridium": "Raw Iridium",
+        "tag.item.c.ores.titanium": "Titanium Ores",
+        "tag.item.c.ores.iridium": "Iridium Ores",
+        "tag.item.c.dusts.sulfur": "Sulfur Dusts",
     })
     for b in BODIES:
         LANG[f"body.{NS}.{b.id}"] = b.name

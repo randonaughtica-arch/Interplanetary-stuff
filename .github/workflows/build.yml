@@ -25,8 +25,6 @@ jobs:
       - name: Build
         run: ./gradlew build --no-daemon --console=plain
 
-      # Boots a headless server, generates terrain on every world and runs the game tests.
-      # The EULA must be accepted for the test server to start.
       - name: Run game tests
         run: |
           mkdir -p build/gametest
@@ -34,9 +32,24 @@ jobs:
           set -o pipefail
           ./gradlew runGametest --no-daemon --console=plain 2>&1 | tee build/gametest.log
 
-      - name: Check game log
+      - name: Check game test log
         if: always()
-        run: python3 tools/check_logs.py build/gametest.log
+        run: python3 tools/check_logs.py build/gametest.log --require "required tests passed"
+
+      # Boots a dedicated server that generates terrain on all 30 worlds, prints a height map of each
+      # and shuts down. The EULA must be accepted for the server to start.
+      - name: Generate every world
+        if: always()
+        run: |
+          mkdir -p run
+          echo "eula=true" > run/eula.txt
+          printf 'level-type=flat\nonline-mode=false\n' > run/server.properties
+          set -o pipefail
+          ./gradlew runCiServer --no-daemon --console=plain 2>&1 | tee build/selftest.log
+
+      - name: Check world generation log
+        if: always()
+        run: python3 tools/check_logs.py build/selftest.log --require "[selftest] PASSED"
 
       - uses: actions/upload-artifact@v4
         if: always()
@@ -45,4 +58,56 @@ jobs:
           path: |
             build/libs/*.jar
             build/gametest.log
+            build/selftest.log
+          if-no-files-found: ignore
+
+  # Flies a (software-rendered) client through several worlds and screenshots the skies.
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Install virtual display
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q xvfb mesa-utils libgl1-mesa-dri > /dev/null
+          pip install -q pillow
+
+      - name: Create a test world
+        run: |
+          mkdir -p run
+          echo "eula=true" > run/eula.txt
+          printf 'level-type=flat\nonline-mode=false\nspawn-protection=0\n' > run/server.properties
+          ./gradlew runCiServer --no-daemon --console=plain > ci-server.log 2>&1 || (tail -80 ci-server.log; exit 1)
+          grep -E "Interplanetary|ERROR|Done" ci-server.log | head -20 || true
+          mkdir -p run/saves
+          cp -r run/world run/saves/ci_world
+
+      - name: Take screenshots
+        run: |
+          printf 'onboardAccessibility:false\ntutorialStep:none\nrenderDistance:8\nsimulationDistance:5\npauseOnLostFocus:false\nsoundCategory_master:0.0\nskipMultiplayerWarning:true\njoinedFirstServer:true\nguiScale:2\n' > run/options.txt
+          export LIBGL_ALWAYS_SOFTWARE=1
+          timeout 1500 xvfb-run -a -s "-screen 0 1280x720x24" ./gradlew runScreenshotClient --no-daemon --console=plain > client.log 2>&1 || echo "client exited with $?"
+          grep -E "\[tour\]|tour|Exception|ERROR|Caused by" client.log | grep -v "OpenAL\|sound" | head -60 || true
+          ls -la run/screenshots || true
+
+      - name: Print screenshots
+        run: python3 tools/print_screenshots.py run/screenshots
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots
+          path: |
+            run/screenshots/
+            client.log
           if-no-files-found: ignore

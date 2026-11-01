@@ -361,5 +361,12 @@
   "system.interplanetary.uranus": "Uranus",
   "system.interplanetary.uranus.desc": "The sideways ice giant and its five large moons.",
   "system.interplanetary.venus": "Venus",
-  "system.interplanetary.venus.desc": "Earth's scorching twin, hidden under thick clouds."
+  "system.interplanetary.venus.desc": "Earth's scorching twin, hidden under thick clouds.",
+  "tag.item.c.dusts.sulfur": "Sulfur Dusts",
+  "tag.item.c.ingots.iridium": "Iridium Ingots",
+  "tag.item.c.ingots.titanium": "Titanium Ingots",
+  "tag.item.c.ores.iridium": "Iridium Ores",
+  "tag.item.c.ores.titanium": "Titanium Ores",
+  "tag.item.c.raw_materials.iridium": "Raw Iridium",
+  "tag.item.c.raw_materials.titanium": "Raw Titanium"
 }
