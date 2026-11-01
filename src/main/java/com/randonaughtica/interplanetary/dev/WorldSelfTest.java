@@ -9,7 +9,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.crash.CrashException;
-import net.minecraft.util.crash.ReportType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkSectionPos;
 import net.minecraft.world.Heightmap;
@@ -53,7 +52,7 @@ public final class WorldSelfTest {
                 }
                 logTerrain(body, world, landing, ground, System.currentTimeMillis() - start);
             } catch (CrashException e) {
-                InterplanetaryStuff.LOGGER.error("[selftest] {} failed to generate:\n{}", body.id(), e.getReport().asString(ReportType.MINECRAFT));
+                InterplanetaryStuff.LOGGER.error("[selftest] {} failed to generate: {}", body.id(), e.getReport().getMessage(), e);
                 failures.add(body.id() + ": " + e.getCause());
             } catch (RuntimeException e) {
                 InterplanetaryStuff.LOGGER.error("[selftest] {} failed to generate", body.id(), e);
