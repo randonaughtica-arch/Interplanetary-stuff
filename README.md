@@ -81,6 +81,13 @@ Requires **Java 21**.
 Install by putting the jar in your `mods` folder together with [Fabric API](https://modrinth.com/mod/fabric-api)
 (Fabric Loader ≥ 0.16, Minecraft 1.21.1).
 
+> Vanilla calls any world with data-driven dimensions "experimental" and shows a warning every time you open it.
+> The mod's dimensions are safe, so it skips that warning screen.
+
+CI also runs `./gradlew runCiServer`, which generates terrain on all 30 worlds and prints a small height map of
+each one, and `./gradlew runScreenshotClient`, which flies a client through several worlds and screenshots the
+skies.
+
 ## Project layout
 
 - `src/main/java/com/randonaughtica/interplanetary/`
@@ -88,6 +95,7 @@ Install by putting the jar in your `mods` folder together with [Fabric API](http
   - `entity/RocketEntity.java`: the rocket (fuel, countdown, launch, landing)
   - `world/`: gravity, space-suit hazard, travel and landing logic, crater and boulder features
   - `client/`: the sky renderer, rocket model/renderer/HUD and the flight computer screen
+  - `dev/`, `client/dev/`, `gametest/`: the world self-test, the screenshot tour and the game tests
 - `tools/generate.py`: **generates all worldgen, blocks, items, recipes, loot tables, tags, advancements,
   language entries and every texture** (procedurally, with numpy and Pillow). Edit its tables and re-run:
   ```bash
