@@ -277,6 +277,7 @@ public class SpaceSkyRenderer implements DimensionRenderingRegistry.SkyRenderer 
                 float u0 = (frame % PHASE_GRID) / (float) PHASE_GRID;
                 float v0 = (frame / PHASE_GRID) / (float) PHASE_GRID;
                 float cell = 1.0F / PHASE_GRID;
+                bilinear(PHASES);
                 RenderSystem.setShaderTexture(0, PHASES);
                 BufferBuilder shadow = Tessellator.getInstance().begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_TEXTURE_COLOR);
                 billboard(shadow, m, dir, size * 1.003F, roll, 1.0F, 1.0F, 1.0F, alpha, u0, v0, u0 + cell, v0 + cell);
