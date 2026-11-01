@@ -4,7 +4,9 @@
   "version": "${version}",
   "name": "Interplanetary Stuff",
   "description": "Build rockets and travel the Solar System! 30 worlds to explore - Mercury, Venus, Mars, dwarf planets, asteroids and the moons of every planet - each with its own terrain, blocks, gravity and sky.",
-  "authors": ["randonaughtica"],
+  "authors": [
+    "randonaughtica"
+  ],
   "contact": {
     "sources": "https://github.com/randonaughtica-arch/Interplanetary-stuff",
     "issues": "https://github.com/randonaughtica-arch/Interplanetary-stuff/issues"
@@ -12,10 +14,19 @@
   "icon": "assets/interplanetary/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.randonaughtica.interplanetary.InterplanetaryStuff"],
-    "client": ["com.randonaughtica.interplanetary.client.InterplanetaryClient"],
-    "fabric-gametest": ["com.randonaughtica.interplanetary.gametest.InterplanetaryGameTests"]
+    "main": [
+      "com.randonaughtica.interplanetary.InterplanetaryStuff"
+    ],
+    "client": [
+      "com.randonaughtica.interplanetary.client.InterplanetaryClient"
+    ],
+    "fabric-gametest": [
+      "com.randonaughtica.interplanetary.gametest.InterplanetaryGameTests"
+    ]
   },
+  "mixins": [
+    "interplanetary.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.16.0",
     "minecraft": "~1.21.1",
