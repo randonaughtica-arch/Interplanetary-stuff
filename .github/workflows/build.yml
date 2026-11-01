@@ -43,7 +43,7 @@ jobs:
         run: |
           mkdir -p run
           echo "eula=true" > run/eula.txt
-          printf 'level-type=flat\nonline-mode=false\n' > run/server.properties
+          printf 'level-type=flat\nonline-mode=false\nmax-tick-time=-1\n' > run/server.properties
           set -o pipefail
           ./gradlew runCiServer --no-daemon --console=plain 2>&1 | tee build/selftest.log
 
@@ -86,7 +86,7 @@ jobs:
         run: |
           mkdir -p run
           echo "eula=true" > run/eula.txt
-          printf 'level-type=flat\nonline-mode=false\nspawn-protection=0\n' > run/server.properties
+          printf 'level-type=flat\nonline-mode=false\nspawn-protection=0\nmax-tick-time=-1\n' > run/server.properties
           ./gradlew runCiServer --no-daemon --console=plain > ci-server.log 2>&1 || (tail -80 ci-server.log; exit 1)
           grep -E "Interplanetary|ERROR|Done" ci-server.log | head -20 || true
           mkdir -p run/saves
