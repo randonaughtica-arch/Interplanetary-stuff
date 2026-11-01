@@ -45,7 +45,7 @@ jobs:
           echo "eula=true" > run/eula.txt
           printf 'online-mode=false\nmax-tick-time=-1\n' > run/server.properties
           set -o pipefail
-          ./gradlew runCiServer --no-daemon --console=plain 2>&1 | tee build/selftest.log
+          timeout 900 ./gradlew runCiServer --no-daemon --console=plain 2>&1 | tee build/selftest.log
 
       - name: Check world generation log
         if: always()
@@ -87,7 +87,7 @@ jobs:
           mkdir -p run
           echo "eula=true" > run/eula.txt
           printf 'online-mode=false\nspawn-protection=0\nmax-tick-time=-1\n' > run/server.properties
-          ./gradlew runCiServer --no-daemon --console=plain > ci-server.log 2>&1 || (tail -80 ci-server.log; exit 1)
+          timeout 900 ./gradlew runCiServer --no-daemon --console=plain > ci-server.log 2>&1 || (tail -80 ci-server.log; exit 1)
           grep -E "Interplanetary|ERROR|Done" ci-server.log | head -20 || true
           mkdir -p run/saves
           cp -r run/world run/saves/ci_world
