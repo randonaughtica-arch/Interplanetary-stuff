@@ -31,7 +31,9 @@ public final class WorldSelfTest {
 
     public static List<String> run(MinecraftServer server) {
         List<String> failures = new ArrayList<>();
+        InterplanetaryStuff.LOGGER.info("[selftest] world seed {}", server.getOverworld().getSeed());
         for (CelestialBody body : CelestialBodies.destinations()) {
+            InterplanetaryStuff.LOGGER.info("[selftest] generating {}", body.id());
             ServerWorld world = server.getWorld(body.worldKey());
             if (world == null) {
                 failures.add(body.id() + ": dimension is missing");
